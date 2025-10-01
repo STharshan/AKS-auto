@@ -40,13 +40,13 @@ const HeroSection = () => {
         {/* Prestige */}
         <p className="text-5xl md:text-6xl font-bold leading-tight tracking-wide mt-5 mb-4 "
            data-aos="fade-up" data-aos-delay="200">
-          AB
+          AKSK 
         </p>
 
         {/* Group */}
         <p className="text-3xl md:text-3xl uppercase font-extrabold tracking-widest relative inline-block pb-2"
            data-aos="fade-up" data-aos-delay="300">
-          <span className="relative z-10 max-w-2xl text-primary">Detailing & Automative</span>
+          <span className="relative z-10 max-w-2xl text-primary">Auto Detailing</span>
         </p>
 
         {/* Sub Text */}
