@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 const testimonials = [
   {
     quote:
-      "Got my car ceramic coated and polished using AB and the service and quality of work was immaculate. Has been maintained twice a month since",
+      "My bro Big L Barbershop has been keeping me fresh for the past few years,this time he took a seat on the customers chair and brought in this Triber for a wash,paint decontamination, machine polish and deep seat and carpet clean. Thank you bro came out fresh",
     author: "Kory",
   },
   {

@@ -6,47 +6,47 @@ import "aos/dist/aos.css";
 
 const services = [
   {
-    title: "DT VALET",
-    desc: `Deep clean of all wheels including callipers, barrels and arches
-A two stage pre-wash including citrus wash and snow foam to lift off the top layer of dirt before contacting the paintwork`,
+    title: "MECHANICAL",
+    desc: "We handle all car and commercial repairs including engines, turbo replacement as well as being clutch specialist.",
     image: "/carpaint.avif",
     path: "/services/mechanical",
   },
   {
-    title: "DT DETAIL",
-    desc: `2 Stage decontamination using fallout remover and tar & glue remover
-Car snow foamed again to remove any chemicals left behind
-​`,
+    title: "SERVICE",
+    desc: "Comprehensive car servicing to ensure your vehicle runs smoothly and efficiently!",
     image: "/gray.avif",
     path: "/services/service",
   },
   {
-    title: "DT MAINTENANCE",
-    desc: `
-Once you have had a DT DETAIL you will automatically be enrolled on to the maintenance scheme`,
+    title: "MOT",
+    desc: "Quick and reliable MOT tests to keep your vehicle roadworthy and compliant!",
     image: "/carmechanic.avif",
     path: "/services/mot",
   },
-  {
-    title: "DT MACHINE POLISH",
-    desc: `
-The DT MACHINE POLISH is a full Stage 1 polish of the paintwork including wing mirrors, door pillars and grill
-
-​
-
-The aim is to remove between 70 and 90 percent of swirls and minor defects
-
-​
-
-2 Stage decontamination using fallout remover and tar & glue remover to get the paint as smooth as possible before the polishing stage
-Exterior wax upgraded giving up to 8 months protection
-All windows cleaned
-Exhaust tips cleaned and buffed
-Finished with tyre shine​
-Interior clean can be added as an optional added extra (see added extras below for more info and prices)`,
-    image: "/paint.webp",
-    path: "/services/wheel-alignment",
-  }
+  // {
+  //   title: "Vehicle Wrapping",
+  //   desc: "We provide wheel alignment with the added benifit of improved vehicle perfomance and tire longvity",
+  //   image: "/paint.webp",
+  //   path: "/services/wheel-alignment",
+  // },
+  // {
+  //   title: "WINDOW TINT",
+  //   desc: "We offer proffessional window tinting for a sleek look and enhanced comfort",
+  //   image: "/bule.avif",
+  //   path: "/services/window-tint",
+  // },
+  // {
+  //   title: "Specialist Coatings",
+  //   desc: "Experts in timing chains, timing belts and one of the few wet timing chain specialist",
+  //   image: "/shine.webp",
+  //   path: "/services/belts-chains",
+  // },
+  // {
+  //   title: "Graphics",
+  //   desc: "We offer the laest dealer-level diagnostics",
+  //   image: "/homepaint.avif",
+  //   path: "/services/diagnostics",
+  // },
 ];
 
 const ServiceSection = () => {
@@ -81,7 +81,7 @@ const ServiceSection = () => {
           Our Services
         </h2>
         <p
-          className="text-center text-light mb-8"
+          className="text-center text-lg dark:text-white mb-8"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -138,15 +138,19 @@ const ServiceSection = () => {
                 data-aos-delay={index * 150} // staggered animation for each card
               >
                 {/* Image */}
-       <img
-                  src={service.image}
-                  alt={service.title}
-                  className="absolute inset-0 w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.onerror = null;
-                    e.currentTarget.src = "/logo.jpg"; // fallback logo
-                  }}
-                />
+                <div className="max-w-sm mx-auto">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="absolute inset-0 w-[95%] mt-15 h-55 object-cover"
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = "/logo.jpg"; // fallback logo
+                    }}
+                  />
+
+                </div>
+
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-overlay dark:bg-overlay/70 hover:bg-overlay/60 dark:hover:bg-overlay/50 transition-all duration-300"></div>
